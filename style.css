@@ -12,7 +12,6 @@ html {
 body {
     font-family: 'Karla', sans-serif;
     margin: 0;
-    height: 100%;
 }
 
 /*Unifico estilos que se repiten a lo largo del c'odigo*/
@@ -50,6 +49,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+.imagen-presentacion, .proyecto-imagen {
+    width: 100%;
+    height: auto;
+}
+
+.conocimientos-bloque, .cita-contenido, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Unifico colores que se repiten a lo largo del c'odigo*/
 header, footer {
     background-color: #C48A69;
@@ -67,20 +78,22 @@ a, .button, .cita, footer {
     color: #8C4A2F;
 }
 
-/*Unifico font-families que se repiten a lo largo del c'odigo*/
+/*Unifico estilado de font que se repiten a lo largo del c'odigo*/
 h1, h2, .conocimiento-nombre {
     font-family: 'Rubik', sans-serif;
 }
 
+h1, .saludo, .resaltado-presentacion, .conocimiento-nombre, .proyecto-nombre {
+    font-weight: 500;
+}
+
 /*Comienza header*/
 header {
-    display: flex;
-    justify-content: flex-end;
     padding: 25px 100px;
     box-shadow: 0 0 29px 0 rgba(196, 138, 105, 0.25);
 }
 
-.nav-menu {
+header, .nav-menu {
     display: flex;
     justify-content: flex-end;
 }
@@ -127,17 +140,13 @@ header {
 
 h1 {
     font-size: 60px;
-    font-weight: 500;
 }
 
 .saludo {
     font-size: 35px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 5px;
 }
 
-.nombre {
+.nombre, .saludo {
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -153,23 +162,13 @@ h1 {
     background-color: #8C4A2F;
     padding: 15px 40px;
     border-radius: 100px;
-    font-weight: 500;
 }
 
 .imagen-presentacion {
-    width: 100%;
-    height: auto;
     margin: 20px;
 }
 
 /*Fin secci'on presentaci'on - Comienzo Secci'on Habilidades*/
-.conocimientos-bloque {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .conocimientos-descripcion {
     max-width: 350px;
 }
@@ -191,18 +190,11 @@ h1 {
 
 .conocimiento-nombre {
     font-size: 20px;
-    font-weight: 500;
 }
 
 /*Fin secci'on habilidades - Comienzo secci'on cita*/
 .seccion-cita {
     background-color: #C86733;
-}
-.cita-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .cita {
@@ -217,52 +209,45 @@ h3 {
 
 /*Fin secci'on cita - Comienzo secci'on Proyectos*/
 
-.filtros {
+.filtros, .filtros-lista, .proyectos-filtro {
     display: flex;
     justify-content: center;
 }
 
+.proyectos-filtro {
+    align-items: center;
+}
+
 .filtros-lista {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .proyectos-filtro {
     margin: 10px 30px;
     font-size: 18px;
-    display: flex;
-    align-items: center;
 }
 
 .proyecto-imagen {
     display: block;
-    width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
 .proyecto-nombre {
     margin-top: 20px;
-    font-weight: 600;
 }
 
 /*Fin secci'on proyectos - Comienzo footer*/
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 80px 20px 60px;
 }
-
-.footer-nav-menu {
+.footer-nav-menu, .footer-social {
     display: flex;
+}
+.footer-nav-menu {
     margin: 0;
 }
 
 .footer-social {
-    display: flex;
     margin: 30px 0;
 }
 
@@ -270,3 +255,64 @@ footer {
     margin: 10px;
 }
 
+/*Comienzo 'ordenes para responsive design*/
+@media (max-width:900px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .presentacion {
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .proyecto-item {
+        width: 45%;
+    }
+}
+
+
+@media (max-width:650px) and (min-width:500px) {
+    .conocimientos-item {
+        width: 200px;
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        justify-content: flex-end;
+        padding: 25px;
+    }
+
+    .nav-menu, .nav-footer {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        font-size: 20px;
+    }
+
+    main, section {
+        padding: 100px 10px;
+    }
+
+    .proyecto-item {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .conocimientos-item {
+        width: 150px;
+        padding: 10px 5px;
+        margin: 5px;
+    }
+
+    .conocimiento-nombre {
+        margin: 3px;
+    }
+}
