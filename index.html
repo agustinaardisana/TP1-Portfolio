@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Agus Ardisana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!--Comienzo header-->
+    <header>
+        <nav class="contenedor nav-menu">
+            <ul class="menu-header">
+                <li class="nav-item">
+                    <a href="#sobre-mi" class="nav-link">HOLA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#conocimientos" class="nav-link">CONOCIMIENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="nav-link">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://contacto" target="_blank" class="nav-link resaltado">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu-hamburguesa">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Fin header - comienzo secci'on principal-->
+    <main id="sobre-mi" class="seccion-presentacion">
+        <div class="contenedor contenido-principal">
+            <div class="presentacion">
+                <p class="saludo">¡Hola! Soy</p>
+                <h1 class="nombre">Agus Ardisana</h1>
+                <p class="detalles">Programadora en construcción</p>
+                <a href="#proyectos" class="resaltado-presentacion">LO QUE HAGO</a>
+            </div>
+            <div class="presentacion">
+                <img src="images/img-about.svg" class="imagen-presentacion">
+            </div>
+        </div>
+
+    </main>
+
+    <!--Fin secci'on presentaci'on - Comienzo Secci'on Habilidades-->
+    <section id="conocimientos" class="seccion-habilidades">
+        <div class="contenedor conocimientos-bloque">
+            <h2 class="titulo-seccion">Mis Conocimientos</h2>
+            <p class="conocimientos-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+                consequuntur
+                debitis molestias. Perspiciatis, sed nisi? Tenetur, deserunt.</p>
+
+            <div class="tabla conocimientos-tabla">
+                <div class="conocimientos-item">
+                    <img src="images/skills-html5.png" />
+                    <p class="conocimiento-nombre">HTML 5</p>
+                </div>
+
+                <div class="conocimientos-item">
+                    <img src="images/skills-css3.png" />
+                    <p class="conocimiento-nombre">Css 3</p>
+                </div>
+
+                <div class="conocimientos-item">
+                    <img src="images/skills-sass.png" />
+                    <p class="conocimiento-nombre">Sass</p>
+                </div>
+
+                <div class="conocimientos-item">
+                    <img src="images/skills-javascript.png" />
+                    <p class="conocimiento-nombre">JavaScript</p>
+                </div>
+
+                <div class="conocimientos-item">
+                    <img src="images/skills-react.png" />
+                    <p class="conocimiento-nombre">React</p>
+                </div>
+
+                <div class="conocimientos-item">
+                    <img src="images/skills-git.png" />
+                    <p class="conocimiento-nombre">Git</p>
+                </div>
+
+            </div>
+    </section>
+
+    <!--Fin secci'on habilidades - Comienzo secci'on cita-->
+    <section class="seccion-cita">
+        <div class="contenedor cita-contenido">
+            <i class="fas fa-quote-right"></i>
+            <p class="cita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequuntur consectetur
+                nisi in atque
+                magnam, nam distinctio veritatis eius, illum exercitationem, accusamus blanditiis dolor dignissimos
+                velit
+                deleniti repellendus odit numquam!</p>
+            <h3>Someone</h3>
+        </div>
+    </section>
+
+    <!--Fin secci'on cita - Comienzo secci'on Proyectos-->
+    <section id="proyectos" class="seccion-proyecto">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Mis Proyectos</h2>
+
+            <!--Uso links en lugar de una funci'on con filtros-->
+            <div class="filtros">
+                <ul class="filtros-lista">
+                    <li>
+                        <a href="" class="proyectos-filtro resaltado">Todos</a>
+                    </li>
+                    <li>
+                        <a href="" class="proyectos-filtro">HTML/CSS</a>
+                    </li>
+                    <li>
+                        <a href="" class="proyectos-filtro">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="" class="proyectos-filtro">React</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Agrego "proyectos en construcci'on" para mantener simetria-->
+            <div class="tabla proyectos-bloque">
+                <div class="proyecto-item">
+                    <img class="proyecto-imagen" src="images/projects-portfolio.png" />
+                    <p class="proyecto-nombre">Portfolio</p>
+                </div>
+
+                <div class="proyecto-item">
+                    <img class="proyecto-imagen" src="images/projects-under-construction.svg" />
+                    <p class="proyecto-nombre">Más en Construcción</p>
+                </div>
+
+                <div class="proyecto-item">
+                    <img class="proyecto-imagen" src="images/projects-under-construction.svg" />
+                    <p class="proyecto-nombre">Más en Construcción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fin secci'on proyectos - Comienzo footer-->
+    <footer>
+        <nav class="nav-footer">
+            <ul class="footer-nav-menu">
+                <li class="nav-item">
+                    <a href="#sobre-mi" class="footer-nav-link">HOLA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#conocimientos" class="footer-nav-link">CONOCIMIENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="footer-nav-link">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://contacto" target="_blank" class="footer-nav-link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="footer-social">
+            <li class="social-item">
+                <a href class="footer-social-link github-link">
+                    <i class="fab fa-github-square social-icon"></i>
+                </a>
+            </li>
+            <li class="social-item">
+                <a href class="footer-social-link linkedin-link">
+                    <i class="fab fa-linkedin social-icon"></i>
+                </a>
+            </li>
+            <li class="social-item">
+                <a href class="footer-social-link email-link">
+                    <i class="fas fa-envelope-square social-icon"></i>
+                </a>
+            </li>
+        </ul>
+
+        <p class="copyright">Hecho con ❤️ en Ada por Agus</p>
+
+    </footer>
+
+</body>
+
+</html>
