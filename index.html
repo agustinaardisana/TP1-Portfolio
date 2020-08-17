@@ -61,8 +61,15 @@
                 consequuntur
                 debitis molestias. Perspiciatis, sed nisi? Tenetur, deserunt.</p>
 
+                <!-- No usamos conocimientos-tabla en el css. Por que esta aqui? -->
             <div class="tabla conocimientos-tabla">
                 <div class="conocimientos-item">
+
+                    <!-- Estas imagenes no estan estiladas de ninguna manera, lo que significa que se ven bien
+                    solamente por el tamaño que tienen. Esta no es buena practica. Las imagenes deben 
+                    tener un tamaño relativo en el css, ya que cualquier cambio (por ejemplo, si necesitamos
+                    una skill nueva y no tenemos una imagen que mida lo mismo que las demas) va a romper la pagina. 
+                     -->
                     <img src="images/skills-html5.png" />
                     <p class="conocimiento-nombre">HTML 5</p>
                 </div>
@@ -109,9 +116,15 @@
     </section>
 
     <!--Fin secci'on cita - Comienzo secci'on Proyectos-->
+
+    <!-- No usamos la clase seccion-proyecto -->
     <section id="proyectos" class="seccion-proyecto">
         <div class="contenedor">
             <h2 class="titulo-seccion">Mis Proyectos</h2>
+
+
+            <!-- Deberian ser, estrictamente <button>, ya que su funcion no es navegar sino
+            que tienen una funcionalidad en nuestra web  -->
 
             <!--Uso links en lugar de una funci'on con filtros-->
             <div class="filtros">
@@ -132,6 +145,8 @@
             </div>
 
             <!--Agrego "proyectos en construcci'on" para mantener simetria-->
+
+            <!-- no usamos la clase proyectos-bloque, no deberia estar aqui -->
             <div class="tabla proyectos-bloque">
                 <div class="proyecto-item">
                     <img class="proyecto-imagen" src="images/projects-portfolio.png" />
@@ -156,6 +171,7 @@
         <nav class="nav-footer">
             <ul class="footer-nav-menu">
                 <li class="nav-item">
+                    <!-- no es necesario darles la clase footer-nav-link ya que no se usa -->
                     <a href="#sobre-mi" class="footer-nav-link">HOLA</a>
                 </li>
                 <li class="nav-item">
