@@ -99,6 +99,7 @@ header, .nav-menu {
 }
 
 .menu-header {
+    /* no es necesario display flex aqui, ya que se lo diste a todos los ul */
     display: flex;
     margin: 0;
 }
@@ -127,6 +128,7 @@ header, .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex wrap no es necesario aqui */
     flex-wrap: wrap;
 }
 
@@ -228,6 +230,7 @@ h3 {
 }
 
 .proyecto-imagen {
+    /* no es necesario display block aqui */
     display: block;
     border-radius: 8px;
 }
@@ -241,6 +244,7 @@ footer {
     padding: 80px 20px 60px;
 }
 .footer-nav-menu, .footer-social {
+    /* no es necesario esto, ya que flex esta dado por el estilo general de ul */
     display: flex;
 }
 .footer-nav-menu {
