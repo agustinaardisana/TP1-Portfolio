@@ -13,7 +13,7 @@
 <body>
 
     <!--Comienzo header-->
-    <header>
+    <header id="header">
         <nav class="contenedor nav-menu">
             <ul class="menu-header">
                 <li class="nav-item">
@@ -31,11 +31,31 @@
             </ul>
         </nav>
 
+        <div class="menu-responsive">
+            <nav class="contenedor nav-menu-responsive">
+                <ul class="menu-header responsive">
+                    <li class="nav-item">
+                        <a href="#sobre-mi" class="nav-link">HOLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#conocimientos" class="nav-link">CONOCIMIENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proyectos" class="nav-link">PROYECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://contacto" target="_blank" class="nav-link resaltado">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="menu-hamburguesa">
             <i class="fas fa-bars"></i>
         </div>
 
     </header>
+
 
     <!--Fin header - comienzo secci'on principal-->
     <main id="sobre-mi" class="seccion-presentacion">
@@ -191,7 +211,7 @@
         <p class="copyright">Hecho con ❤️ en Ada por Agus</p>
 
     </footer>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

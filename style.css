@@ -118,6 +118,15 @@ header, .nav-menu {
     border-radius: 100px;
 }
 
+.menu-responsive {
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-190px); 
+    transition: 0.5s ease-in;
+}
+
 .menu-hamburguesa {
     display: none;
 }
@@ -295,6 +304,16 @@ footer {
         display: block;
         font-size: 20px;
     }
+    
+    .menu-header.responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+
+    .menu-header.responsive > li:last-child {
+        margin: 0;
+    }
 
     main, section {
         padding: 100px 10px;
@@ -315,4 +334,23 @@ footer {
     .conocimiento-nombre {
         margin: 3px;
     }
+}
+
+/*Comienzo clases especiales*/
+.hidden {
+    display: none;
+}
+
+.color-menu {
+    color: #F0EEE4
+}
+
+.menu-desplegado {
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.abierto {
+    transform: translateY(0);
+    position: relative;
 }
