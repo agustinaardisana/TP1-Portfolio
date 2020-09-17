@@ -119,14 +119,13 @@ header, .nav-menu {
 }
 
 .menu-responsive {
-    padding: 0 20px;
+    padding: 0 40px;
     height: 160px;
     width: 100%;
     position: absolute;
-    top: 0;
     right: 20px;
     transform: translateY(-190px); 
-    transition: 0.5s ease-in;
+    transition: 1s;
 }
 
 .menu-hamburguesa {
@@ -296,6 +295,8 @@ footer {
     header {
         justify-content: flex-end;
         padding: 25px;
+        height: 100px;
+        transition: 1s;
     }
 
     .nav-menu, .nav-footer {
@@ -305,6 +306,8 @@ footer {
     .menu-hamburguesa {
         display: block;
         font-size: 20px;
+        position: absolute;
+        right: 20px;
     }
     
     .menu-header.responsive {
@@ -350,10 +353,9 @@ footer {
 .menu-desplegado {
     justify-content: space-between;
     height: 200px;
-    transition: translate 1s;
+    transition: all 1s;
 }
 
 .abierto {
     transform: translateY(0);
-    position: relative;
 }
