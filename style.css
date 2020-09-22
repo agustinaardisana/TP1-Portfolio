@@ -226,6 +226,20 @@ h3 {
 
 .proyectos-filtro {
     align-items: center;
+    border: none;
+}
+
+.proyectos-filtro:not(.resaltado) {
+    background-color: transparent;
+    transition: 1s;
+}
+
+.proyectos-filtro:hover {
+    background-color: #F0EEE4;
+    font-weight: 200;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 100px;
 }
 
 .filtros-lista {

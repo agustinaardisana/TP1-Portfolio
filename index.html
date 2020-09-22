@@ -63,7 +63,7 @@
             <div class="presentacion">
                 <p class="saludo">¡Hola! Soy</p>
                 <h1 class="nombre">Agus Ardisana</h1>
-                <p class="detalles">Programadora en construcción</p>
+                <p class="detalles">Desarrolladora Frontend en construcción</p>
                 <a href="#proyectos" class="resaltado-presentacion">LO QUE HAGO</a>
             </div>
             <div class="presentacion">
@@ -133,37 +133,36 @@
         <div class="contenedor">
             <h2 class="titulo-seccion">Mis Proyectos</h2>
 
-            <!--Uso links en lugar de una funci'on con filtros-->
             <div class="filtros">
                 <ul class="filtros-lista">
                     <li>
-                        <a href="#todos" class="proyectos-filtro resaltado">Todos</a>
+                        <button href="#todos" class="proyectos-filtro resaltado" data-tecnologia="todos">Todos</button>
                     </li>
                     <li>
-                        <a href="#HTML/CSS" class="proyectos-filtro">HTML/CSS</a>
+                        <button href="#HTML/CSS" class="proyectos-filtro" data-tecnologia="html">HTML/CSS</button>
                     </li>
                     <li>
-                        <a href="#JavaScript" class="proyectos-filtro">JavaScript</a>
+                        <button href="#JavaScript" class="proyectos-filtro" data-tecnologia="javascript">JavaScript</button>
                     </li>
                     <li>
-                        <a href="#React" class="proyectos-filtro">React</a>
+                        <button href="#React" class="proyectos-filtro" data-tecnologia="react">React</button>
                     </li>
                 </ul>
             </div>
 
             <!--Agrego "proyectos en construcci'on" para mantener simetria-->
             <div class="tabla proyectos-bloque">
-                <div class="proyecto-item">
+                <div class="proyecto-item" data-tecnologia="html">
                     <img class="proyecto-imagen" src="images/projects-portfolio.png" />
                     <p class="proyecto-nombre">Portfolio</p>
                 </div>
 
-                <div class="proyecto-item">
+                <div class="proyecto-item" data-tecnologia="ninguna">
                     <img class="proyecto-imagen" src="images/projects-under-construction.svg" />
                     <p class="proyecto-nombre">Más en Construcción</p>
                 </div>
 
-                <div class="proyecto-item">
+                <div class="proyecto-item" data-tecnologia="ninguna">
                     <img class="proyecto-imagen" src="images/projects-under-construction.svg" />
                     <p class="proyecto-nombre">Más en Construcción</p>
                 </div>
