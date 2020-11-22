@@ -11,10 +11,12 @@ The technologies used for this project are:
 
 -CSS3
 
-The pre-established design that had to ve followed as part of the requirements to meet can be seen at https://frontend-proyecto-portfolio.adaitw.org/.
+-Basic JavaScript
+
+The pre-established design that had to be followed as part of the requirements to meet can be seen at https://frontend-proyecto-portfolio.adaitw.org/.
 
 ## Project Status and functionalities
-The present status of the project includes internal navigation between sections. However it **does not** contemplate functionalities such as navigation to external pages or active filters, among others.
+The present status of the project includes internal navigation between sections and filters. However it **does not** contemplate functionalities such as navigation to external pages, among others.
 
 Nevertheless, this is an ongoing project, which means that more sections and functionalities will be added to improve user interaction as we progress through the course curriculum.
 
@@ -35,10 +37,12 @@ Las tecnologías usadas para este proyecto fueron:
 
 -CSS3
 
+-Basic JavaScript
+
 El diseño a seguir fue pre-establecido y puede verse en el siguiente enlace https://frontend-proyecto-portfolio.adaitw.org/.
 
 ## Estado del Proyecto y Funcionalidades
-La presente entrega del proyecto **no** contempla funcionalidades tales como navegación a páginas externas ni filtros activos, entre otras sino sólo navegación interna entre secciones. 
+La presente entrega del proyecto **no** contempla funcionalidades tales como navegación a páginas externas entre otras sino sólo navegación interna entre secciones. 
 
 Sin embargo, este es un proyecto en curso por lo que a medida que avancemos en la currícula del curso se agregarán más secciones y funcionalidades que mejoren la interacción con el usuario.
 
