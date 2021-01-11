@@ -10,11 +10,8 @@ The technologies used for this project are:
 
 -CSS3
 
-<<<<<<< HEAD
-=======
 -Basic JavaScript
 
->>>>>>> 454e97e8c10b4e730e876addef07fc4b6eb6ff48
 The pre-established design that had to be followed as part of the requirements to meet can be seen at https://frontend-proyecto-portfolio.adaitw.org/.
 
 ## Project Status and functionalities
