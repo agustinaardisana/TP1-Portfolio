@@ -35,7 +35,7 @@ section, main {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 110px 40px;
+    padding: 80px 40px;
 }
 
 h2 {
@@ -59,6 +59,16 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.wave-container {
+    position: relative;
+    overflow: hidden;
+    top: -1px;
+}
+
+.wave-container.top {
+    top: 5px;
 }
 
 /*Unifico colores que se repiten a lo largo del c'odigo*/
@@ -137,6 +147,10 @@ header, .nav-menu {
 
 /*Fin header - comienza secci'on presentaci'on*/
 
+.seccion-presentacion {
+    padding-bottom: 20px;
+}
+
 .contenido-principal {
     display: flex;
     justify-content: center;
@@ -183,6 +197,11 @@ h1 {
 
 /*Fin secci'on presentaci'on - Comienzo Secci'on Habilidades*/
 
+.seccion-habilidades, .seccion-proyecto {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .conocimientos-descripcion {
     max-width: 350px;
 }
@@ -200,6 +219,10 @@ h1 {
     width: 260px;
     margin: 10px;
     padding: 30px;
+}
+
+.conocimientos-item:hover, .proyecto-item:hover {
+    border: 2px solid #8C4A2F;
 }
 
 .conocimiento-nombre {
@@ -271,7 +294,7 @@ h3 {
 /*Fin secci'on proyectos - Comienzo footer*/
 
 footer {
-    padding: 80px 20px 60px;
+    padding: 15px 20px 30px;
 }
 
 .footer-nav-menu, .footer-social {
