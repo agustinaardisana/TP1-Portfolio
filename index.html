@@ -26,7 +26,7 @@
                     <a href="#proyectos" class="nav-link">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="http://contacto" target="_blank" class="nav-link resaltado">CONTACT</a>
+                    <a href="#contacto" class="nav-link resaltado">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -44,7 +44,7 @@
                         <a href="#proyectos" class="nav-link">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="http://contacto" target="_blank" class="nav-link resaltado">CONTACT</a>
+                        <a href="#contacto" class="nav-link resaltado">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -172,7 +172,7 @@
             <!--Agrego "proyectos en construcci'on" para mantener simetria-->
             <div class="tabla proyectos-bloque">
                 <a href="#sobre-mi" class="proyecto-item" data-tecnologia="html">
-                    <img class="proyecto-imagen" src="images/projects-portfolio.png" />
+                    <img class="proyecto-imagen" src="images/projects-portfolio.svg" />
                     <p class="proyecto-nombre">Portfolio</p>
                 </a>
 
@@ -199,12 +199,68 @@
         </div>
     </section>
 
+    <!--Fin seccion proyectos - Comienzo seccion contacto-->
+    <section class="seccion-contacto" id="contacto">
+        <div class="contenedor-seccion-contacto">
+            <div class="seccion-contacto_social">
+                <h2>Let's Connect</h2>
+
+                <p>You can find me at:</p>
+
+                <ul class="contact-social">
+                    <li class="social-item contacto">
+                        <a href="https://github.com/agustinaardisana" target="_blank" class="contact-social-link github-link">
+                            <i class="fab fa-github-square social-icon"></i>
+                            <p>agustinaardisana</p>
+                        </a>
+                    </li>
+                    <li class="social-item contacto">
+                        <a href="https://www.linkedin.com/in/agustinaardisana/" target="_blank" class="contact-social-link linkedin-link">
+                            <i class="fab fa-linkedin social-icon"></i>
+                            <p>agustinaardisana</p>
+                        </a>
+                    </li>
+                    <li class="social-item contacto">
+                        <a href="mailto:agustinaardisana@gmail.com" target="_blank" class="contact-social-link email-link">
+                            <i class="fas fa-envelope-square social-icon"></i>
+                            <p>agustinaardisana@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="seccion-contacto_formulario">
+                <h2>Contact Me</h2>
+                <form action="https://formsubmit.co/agustinaardisana@gmail.com" method="POST">
+                    <div class="container-name-lastname">
+                        <div class="container-name">
+                            <label for="name">Name *</label>
+                            <input id="name" type="text" name="name" aria-label="Name" placeholder="Your Name" required />
+                        </div>
+
+                        <div class="container-lastname">
+                            <label for="lastname">Last Name *</label>
+                            <input id="lastname" type="text" name="lastname" aria-label="Last Name" placeholder="Your Last Name" required />
+                        </div>
+                    </div>    
+                    <label for="email">Email * </label>
+                    <input id="email" type="email" name="email" aria-label="e-mail adress" placeholder="youremail@email.com" required />
+                    <label for="message">Message *</label>
+                    <textarea id="message" type="text" name="message" aria-label="Write your message here" cols="30" rows="10" placeholder="Leave your message here" required ></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <div class="wave-container top">   
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#C48A69" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,101.3C480,128,600,192,720,192C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-          </svg>
-    </div>
-    <!--Fin secci'on proyectos - Comienzo footer-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#C48A69" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,101.3C480,128,600,192,720,192C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+  </div>
+
+
+    <!--Fin seccion contacto - Comienzo footer-->
     <footer>
         <nav class="nav-footer">
             <ul class="footer-nav-menu">
@@ -218,7 +274,7 @@
                     <a href="#proyectos" class="footer-nav-link">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="http://contacto" target="_blank" class="footer-nav-link">CONTACT</a>
+                    <a href="#contacto" class="footer-nav-link">CONTACT</a>
                 </li>
             </ul>
         </nav>

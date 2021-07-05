@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 /*Unifico estilos que se repiten a lo largo del c'odigo*/
 
 ul {
@@ -81,7 +85,7 @@ header, footer {
     background-color: #F0EEE4;
 }
 
-a, .button, .cita, footer {
+a:not(.contact-social-link, .resaltado), .button, .cita, footer {
     color: #F0EEE4;
 }
 
@@ -291,7 +295,95 @@ h3 {
     margin-top: 20px;
 }
 
-/*Fin secci'on proyectos - Comienzo footer*/
+/*Fin secci'on proyectos - Comienzo seccion contacto*/
+
+.contenedor-seccion-contacto {
+    border: 1px solid #F0EEE4;
+    border-radius: 15px;
+    padding: 30px 60px;
+    background-color: #f2f0eb;
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.contenedor-seccion-contacto>div, .contact-social, form, .container-name, .container-lastname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contenedor-seccion-contacto>div {
+    padding: 15px 40px;
+    width: 50%;
+}
+
+.contact-social-link {
+    color: #C86733;
+    font-size: 15px;
+    display: flex;
+}
+
+.contact-social-link>.social-icon {
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+.container-name, .container-lastname {
+    width: 50%;
+}
+
+.container-name {
+    margin: 0 10px 15px 0;
+}
+
+.container-lastname {
+    margin: 0 0 15px 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+input, textarea {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+    border: 1px solid #f5414f;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid #88c459;
+}
+
+.container-name-lastname {
+    display: flex;
+    width: 100%;
+}
+
+form>button {
+    border: transparent;
+    background-color: transparent;
+    background-color: #C86733;
+    color: #F0EEE4;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/*Fin secci'on contacto - Comienzo footer*/
 
 footer {
     padding: 15px 20px 30px;
@@ -328,6 +420,12 @@ footer {
     .proyecto-item {
         width: 45%;
     }
+    .contenedor-seccion-contacto {
+        flex-direction: column;
+    }
+    .contenedor-seccion-contacto>div {
+        width: 100%;
+    }
 }
 
 @media (max-width:650px) and (min-width:500px) {
@@ -361,7 +459,7 @@ footer {
     .menu-header.responsive>li:last-child {
         margin: 0;
     }
-    main, section {
+    main, section, .contenedor-seccion-contacto {
         padding: 100px 10px;
     }
     .proyecto-item {
@@ -377,6 +475,22 @@ footer {
     }
     .conocimiento-nombre {
         margin: 3px;
+    }
+    .container-name-lastname {
+        flex-direction: column;
+    }
+    .container-name, .container-lastname {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:350px) {
+    .contenedor-seccion-contacto>div {
+        padding: 10px;
+    }
+    .contenedor-seccion-contacto>div>h2 {
+        font-size: 35px;
     }
 }
 
